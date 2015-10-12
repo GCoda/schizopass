@@ -1,0 +1,27 @@
+// output: index.html
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    title pageTitle
+    
+  body(style='padding: 10px')
+    .row
+      .col-md-12
+        .form-group
+          label Domain
+          input#domain.form-control(placeholder='Domain')
+            
+        .form-group
+          label Password
+          input#password.form-control(type='password', placeholder='Password')
+            
+        .form-group
+          label Site prefix
+          input#domainAppend.form-control(placeholder='@!123')
+            
+        .form-group
+          label Global prefix
+          input#append.form-control(placeholder='@!123')
+        button.btn.btn-default(type='submit' onclick='parent.postMessage("closeIframe","*"); ') Submit
+    script(src='/frame/index.src.js')
