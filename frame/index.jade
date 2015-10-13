@@ -23,5 +23,8 @@ html(lang="en")
         .form-group
           label Global prefix
           input#append.form-control(placeholder='@!123')
-        button.btn.btn-default(type='submit' onclick='parent.postMessage("closeIframe","*"); ') Submit
-    script(src='/frame/index.src.js')
+        button.btn.btn-default(
+          type='submit' 
+          onclick="parent.postMessage('closeIframe','*');"
+        ) Submit
+    script(src='/frame/index.js')
