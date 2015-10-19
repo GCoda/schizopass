@@ -3,8 +3,6 @@ var Base64 = require('../node_modules/js-base64/base64.min.js').Base64;
 
 var referrer = document.referrer;
 
-
-
 // Document Ready
 (function() {
 
